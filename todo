@@ -1,0 +1,4 @@
+- completer le Makefile de lab2
+	- y ajouter une option pour l'exemple trie-string.c en s'inspirant des deux autres
+	- y ajouter une option "clean" qui efface le dossier bin/
+- ajouter un Makefile à lab3
