@@ -42,4 +42,6 @@ int main( int argc, char **argv ) {
 
 	printf("%p %ld\n", t5[0], sizeof(t5[0])) ;
 	//0x7fff75c2acf0 20
+
+	return 0;
 }
