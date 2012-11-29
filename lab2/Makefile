@@ -1,12 +1,12 @@
 CFLAGS=-Wall
 
-tout: tableaux trans-pour-web
+tout: bin/tableaux bin/trans-pour-web
 
 bin:
 	mkdir -p bin/
 
-tableaux: bin
-	gcc ${CFLAGS} -o bin/$@ $@.c
+bin/tableaux: bin
+	gcc ${CFLAGS} -o $@ tableaux.c
 
-trans-pour-web: bin
-	gcc ${CFLAGS} -o bin/$@ $@.c
+bin/trans-pour-web: bin
+	gcc ${CFLAGS} -o $@ trans-pour-web.c
