@@ -3,6 +3,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+/*! Programme d'exploration des tableaux
+*/
 int main( int argc, char **argv ) {
 
 	int t1[5] = {10, 20, 30, 40, 50} ;

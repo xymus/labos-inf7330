@@ -4,6 +4,10 @@
 
 char *remplacer_pour_web( const char *ori );
 
+/*! \brief Programme traduisant une chaîne de caractères pour le web
+*
+* \return Code d'erreur
+*/
 int main( int argc, char **argv ) {
 	if ( argc == 2 ) {
 		char *chaine_traite = remplacer_pour_web( argv[1] );
@@ -16,6 +20,11 @@ int main( int argc, char **argv ) {
 	}
 }
 
+/*! \brief Traduit une chaîne de caractères pour le web
+*
+* \param ori Chaîne de caractère d'origine (ne sera pas modifiée)
+* \return Chaîne de caractère modifiée
+*/
 char *remplacer_pour_web( const char *ori ) {
 
 	// trouver futur taille

@@ -4,6 +4,11 @@
 #include<stdlib.h>
 #include<string.h>
 
+/*! Échange la position deux pointeurs de chaînes de caractères
+*
+* \param pa Premier élément à échanger
+* \param pb Deuxième élément à échanger
+*/
 void swap(char **pa, char **pb) {
 	char *tmp;
 	tmp = *pa;
@@ -11,6 +16,11 @@ void swap(char **pa, char **pb) {
 	*pb = tmp;
 }
 
+/*! Trie un tableau avec strcmp et la fonction swap
+*
+* \param tab Tableau a trier
+* \param size Taille du tableau
+*/
 void sort(char **tab, size_t size) {
 	size_t i,j,k;
 	for(i=0;i<size;i++) {
@@ -26,6 +36,14 @@ void sort(char **tab, size_t size) {
 	}
 }
 
+/*! \brief Programme triant les mots passés en argument
+*
+* Usage: trie-string mot0 [mot1 [mot2 [...]]]
+*
+* Affiche le mots entrés en ordre lexicographique sur la sortie standard.
+*
+* \return Code d'erreur
+*/
 int main(int argc, char **argv) {
 
 	char **tab = argv+1;
