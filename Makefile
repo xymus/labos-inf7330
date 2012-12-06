@@ -10,4 +10,4 @@ doc:
 	doxygen Doxyfile
 
 # .PHONY permet de forcer l'exécution de certaines règles
-.PHONY: lab1 lab2
+.PHONY: lab1 lab2 doc
