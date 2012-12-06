@@ -2,6 +2,14 @@
 #include <stdio.h>
 #include <time.h>
 
+/*! \brief Générateur de nombres aléatoire
+*
+* Programme interactif pour générer des nombres aléatoires
+* selon un maximum spécifié.
+* \param argc Nombre d'arguments
+* \param argv Valeur des arguments
+* \return Code d'erreur
+*/
 int main( int argc, char **argv )
 {
 	int max;
